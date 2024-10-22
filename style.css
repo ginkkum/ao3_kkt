@@ -1,0 +1,185 @@
+#workskin .line {
+  width: 100%;
+  max-width: 320px;
+  font-family: Roboto, system-ui;
+  display: table;
+  margin: auto;
+  background-color: #ABC1D2;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+#workskin .line .out dt {
+  display: none;
+}
+
+#workskin .line .in dt {
+  clear: both;
+  position: relative;
+  margin: 0 10px 0.5em;
+  text-align: left;
+  font-weight: normal;
+  font-family: inherit;
+  width: 5em;
+  color: #444D54;
+  font-size: 0.6em;
+}
+
+#workskin .line dd {
+  max-width: 65%;
+  clear: both;
+  position: relative;
+  color: #1A1919;
+  border-radius: 0.75em;
+  margin: 0 10px 0.5em;
+  padding: 0.5em 1em;
+  z-index: 1;
+}
+
+#workskin .line dd:before {
+  content: "";
+  position: absolute;
+  top: -.20em;
+  width: 1em;
+  height: 1em;
+  border-bottom: 0.5em solid #FFFFFF;
+  z-index: -1;
+}
+
+#workskin .line .out dd {
+  float: right;
+  background: #FCE700;
+}
+
+#workskin .line .out dd::before {
+  right: -.75em;
+  border-color: #FCE700;
+  border-bottom-left-radius: 0.6em 0.8em;
+  transform: rotate(90deg);
+  transform-origin: center;
+}
+
+#workskin .line .in dd {
+  float: left;
+  background: #FFFFFF;
+}
+
+#workskin .line .in dd:before {
+  left: -.75em;
+  border-color: #FFFFFF;
+  border-bottom-right-radius: 0.6em 0.8em;
+  transform: rotate(-90deg);
+  transform-origin: center;
+}
+
+#workskin .line .pic,
+#workskin .line .emoji {
+  padding: 0;
+  background: none !important;
+}
+
+#workskin .line .pic:before,
+#workskin .line .emoji:before {
+  content: none;
+}
+
+#workskin .line .pic img,
+#workskin .line .pic iframe {
+  border-radius: 0.5em;
+  width: 100%;
+  display: block;
+}
+
+#workskin .line .emoji {
+  font-size: 3em;
+}
+
+#workskin .line .emoji sub {
+  font-size: 0.2em;
+}
+
+#workskin .line dd sub {
+  position: absolute;
+  width: 5em;
+  bottom: 1em;
+  color: #444D54;
+  font-size: 0.6em;
+}
+
+#workskin .line .in dd sub {
+  right: -5.5em;
+  text-align: left;
+}
+
+#workskin .line .out dd sub {
+  left: -5.5em;
+  text-align: right;
+}
+
+#workskin .line .out dd sub:before {
+  position: absolute;
+  top: -1.2em;
+  right: 0;
+  content: "";
+}
+
+#workskin .line .out dd.unread sub:before {
+  content: "";
+}
+
+#workskin .line .day {
+  border-radius: 1.5em;
+  margin: 1em auto;
+  padding: 0.5em 1.8em 0.5em 2.1em;
+  text-align: center;
+  display: table;
+  background: rgba(0,0,0, 0.1);
+  color: white;
+  font-weight: normal;
+  font-family: inherit;
+  font-size: 0.75em;
+  background-image: url('https://i.postimg.cc/MTfkBHCD/date-calendar-f.png'), url('https://i.postimg.cc/8C39TD7r/date-chevron.png');
+  background-position: left 0.75em center, right 0.75em center;
+  background-repeat: no-repeat, no-repeat;
+  background-size: auto 1em;
+}
+
+#workskin .line .contact {
+  position: relative;
+  display: block;
+  background: #ABC1D2;
+  margin: 0;
+  padding: 0.5em;
+  line-height: 2em;
+  font-size: inherit;
+  font-family: inherit;
+  color: #1A1919;
+  font-weight: bold;
+  text-align: center;
+  padding-left: 7.5em;
+  padding-right: 7.5em;
+}
+
+#workskin .line .contact:before,
+#workskin .line .contact:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background-repeat: no-repeat;
+  background-size: auto 1em;
+}
+
+#workskin .line .contact:before {
+  left: 1em;
+  width: 3.5em;
+  background-image: url("https://i.postimg.cc/bNHTm889/contact-return.png");
+  background-position: left;
+}
+
+#workskin .line .contact:after {
+  right: 1em;
+  width: 3.5em;
+  background-image: url("https://i.postimg.cc/5y83dWz1/contact-search.png"), url("https://i.postimg.cc/dQCnTrxX/contact-menu.png");
+  background-position: left, right;
+}
