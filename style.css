@@ -138,7 +138,7 @@
   font-weight: normal;
   font-family: inherit;
   font-size: 0.75em;
-  background-image: url('https://i.postimg.cc/MTfkBHCD/date-calendar-f.png'), url('https://i.postimg.cc/8C39TD7r/date-chevron.png');
+  background-image: url("https://github.com/ginkkum/ao3_kkt/blob/main/images/date_calendar_f.png?raw=true"), url("https://github.com/ginkkum/ao3_kkt/blob/main/images/date_chevron.png?raw=true");
   background-position: left 0.75em center, right 0.75em center;
   background-repeat: no-repeat, no-repeat;
   background-size: auto 1em;
@@ -173,13 +173,13 @@
 #workskin .kkt .contact:before {
   left: 1em;
   width: 3.5em;
-  background-image: url("https://i.postimg.cc/bNHTm889/contact-return.png");
+  background-image: url("https://github.com/ginkkum/ao3_kkt/blob/main/images/contact_return.png?raw=true");
   background-position: left;
 }
 
 #workskin .kkt .contact:after {
   right: 1em;
   width: 3.5em;
-  background-image: url("https://i.postimg.cc/5y83dWz1/contact-search.png"), url("https://i.postimg.cc/dQCnTrxX/contact-menu.png");
+  background-image: url("https://github.com/ginkkum/ao3_kkt/blob/main/images/contact_search.png?raw=true"), url("https://github.com/ginkkum/ao3_kkt/blob/main/images/contact_menu.png?raw=true");
   background-position: left, right;
 }
